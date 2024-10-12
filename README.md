@@ -71,7 +71,7 @@ Através da URL 'http://localhost:3001/' após inicializar o Docker Compose, con
 - up
 
 ## EVIDENCIA
-Segue o vídeo apresentando a execução do projeto
+Segue na pasta raiz do projeto o vídeo apresentando a execução da aplicação.
 
 ## CONCLUSÃO
 O Mc Duck Bank é uma aplicação que simula um banco fictício do Tio Patinhas, focada na gestão de usuários através de uma API RESTful. Este projeto contempla operações de criação, leitura, atualização e exclusão (CRUD) de usuários, proporcionando uma base sólida para o aprendizado sobre desenvolvimento de APIs com Node.js e integração com bancos de dados.
