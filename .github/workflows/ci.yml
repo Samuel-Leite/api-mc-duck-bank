@@ -26,9 +26,3 @@ jobs:
 
     - name: Run tests
       run: npm test
-
-    - name: Build application
-      run: npm run build  # se você tiver um script de build
-
-    - name: Run linters
-      run: npm run lint  # se você tiver um script de lint
