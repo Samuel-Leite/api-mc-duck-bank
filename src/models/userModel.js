@@ -45,7 +45,7 @@ const User = {
     }
   },
 
-  async updateUser(id, userData) {
+  async updateUser1(id, userData) {
     const { username, cpf, email, address, password } = userData;
     const hashedPassword = password ? await bcrypt.hash(password, 10) : null;
     const { client, release } = await getClient();
