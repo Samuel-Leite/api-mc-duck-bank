@@ -1,6 +1,6 @@
 # API da plataforma Mc Duck Bank
 
-![alt text](mcduck-logo.png)
+
 
 ## 🚀 INTRODUÇÃO:
 O Mc Duck Bank é um banco fictício inspirado no Tio Patinhas. Neste projeto, foi construído o Back-End integrando com o Front-End que contempla os principais recursos de gerenciamento de usuários, permitindo operações de CRUD (Criar, Consultar, Atualizar e Deletar). A API foi projetada para ser escalável e segura, proporcionando uma experiência robusta para os usuários do banco e inclui monitoramento de desempenho usando Grafana e Prometheus, permitindo uma análise detalhada das métricas da API durante testes de performance.
