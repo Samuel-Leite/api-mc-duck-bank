@@ -1,9 +1,9 @@
 # API da plataforma Mc Duck Bank
 
-![alt text](mcduck-logo.png)
+
 
 ## 🚀 INTRODUÇÃO:
-O Mc Duck Bank é um banco fictício inspirado no Tio Patinhas. Neste projeto, construí uma API que contempla os principais recursos de gerenciamento de usuários, permitindo operações de CRUD (Criar, Ler, Atualizar e Deletar). A API foi projetada para ser escalável e segura, proporcionando uma experiência robusta para os usuários do banco e inclui monitoramento de desempenho usando Grafana e Prometheus, permitindo uma análise detalhada das métricas da API durante testes de performance.
+O Mc Duck Bank é um banco fictício inspirado no Tio Patinhas. Neste projeto, foi construído o Back-End integrando com o Front-End que contempla os principais recursos de gerenciamento de usuários, permitindo operações de CRUD (Criar, Consultar, Atualizar e Deletar). A API foi projetada para ser escalável e segura, proporcionando uma experiência robusta para os usuários do banco e inclui monitoramento de desempenho usando Grafana e Prometheus, permitindo uma análise detalhada das métricas da API durante testes de performance.
 
 ## 💻 TECNOLOGIAS:
 - Node.js: Ambiente de execução para JavaScript no lado do servidor.
@@ -31,10 +31,15 @@ DB_HOST=localhost
 DB_PORT=numero_porta
 DB_DATABASE=nome_banco_dados
 ```
-- Inicializar a API:
+- Inicializar o Back-End:
 
 ```
 npm run dev
+```
+- Inicializar a React App (Front-End):
+
+```
+npm start
 ```
 
 ## 📂 ESTRUTURA DO PROJETO:
@@ -71,7 +76,7 @@ Através da URL 'http://localhost:3001/' após inicializar o Docker Compose, con
 - up
 
 ## EVIDENCIA
-Segue na pasta raiz do projeto o vídeo apresentando a execução da aplicação.
+Segue na pasta raiz 'api' do projeto o vídeo apresentando a execução da aplicação.
 
 ## CONCLUSÃO
 O Mc Duck Bank é uma aplicação que simula um banco fictício do Tio Patinhas, focada na gestão de usuários através de uma API RESTful. Este projeto contempla operações de criação, leitura, atualização e exclusão (CRUD) de usuários, proporcionando uma base sólida para o aprendizado sobre desenvolvimento de APIs com Node.js e integração com bancos de dados.
