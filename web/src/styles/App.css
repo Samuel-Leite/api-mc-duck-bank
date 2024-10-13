@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black; /* Mudado de white para black */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.content {
+  color: black; /* Garante que o texto da classe content fique preto */
+}
+
+.content h3 {
+  color: black; /* Garante que o h3 fique preto */
+}
+
+.content p {
+  color: black; /* Garante que o parágrafo fique preto */
+}
+
+.btn.transparent {
+  color: black; /* Cor do texto do botão */
+  background-color: transparent; /* Fundo transparente */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

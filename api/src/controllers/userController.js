@@ -28,13 +28,13 @@ const userController = {
   },
 
   async login(req, res) {
-    const { username, password } = req.body;
+    const { cpf, password } = req.body; // Alterado de 'username' para 'cpf'
 
     try {
       const { client, release } = await getClient(); // Certifique-se de obter o cliente e a função de liberação
       const result = await client.query(
-        "SELECT * FROM users WHERE username = $1",
-        [username]
+        "SELECT * FROM users WHERE cpf = $1", // Alterado para buscar pelo 'cpf'
+        [cpf]
       );
 
       release(); // Libere o cliente após a consulta
@@ -132,11 +132,9 @@ const userController = {
   async deleteAllUsers(req, res) {
     try {
       const deletedUsers = await User.deleteAllUsers();
-      res
-        .status(200)
-        .json({
-          message: `${deletedUsers.rowCount} usuários deletados com sucesso!`,
-        });
+      res.status(200).json({
+        message: `${deletedUsers.rowCount} usuários deletados com sucesso!`,
+      });
     } catch (err) {
       console.error("Erro ao deletar usuários:", err);
       res.status(500).json({ error: "Erro ao deletar usuários" });
