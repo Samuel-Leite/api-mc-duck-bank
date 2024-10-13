@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const dotenv = require("dotenv");
 const authRoutes = require("./routes/authRoutes");
+const cors = require("cors"); // Importa o cors
 const { collectDefaultMetrics, register, Histogram } = require("prom-client");
 
 dotenv.config();
@@ -16,17 +17,20 @@ collectDefaultMetrics();
 const responseTimeHistogram = new Histogram({
   name: "api_response_time_seconds",
   help: "Tempo de resposta da API em segundos",
-  labelNames: ["route", "status"],  // Incluindo "status" aqui
+  labelNames: ["route", "status"],
 });
 
 // Middleware para medir o tempo de resposta
 app.use((req, res, next) => {
   const end = responseTimeHistogram.startTimer();
   res.on("finish", () => {
-    end({ route: req.path, status: res.statusCode });  // Agora isso está correto
+    end({ route: req.path, status: res.statusCode });
   });
   next();
 });
+
+// Use o middleware CORS
+app.use(cors()); // Habilita CORS para todas as rotas
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
