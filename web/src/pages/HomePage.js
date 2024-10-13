@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/HomePage.css";
+import "../styles/Home.css";
 import mcduckLogo from "../assets/images/mcduck-logo-2.png";
 
 const HomePage = () => {

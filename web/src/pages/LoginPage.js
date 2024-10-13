@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Importa useNavigate
-import "../styles/LoginPage.css";
+import "../styles/Login.css";
 import mcduckLogo from "../assets/images/mcduck-logo-2.png";
 import axios from "axios";
 import Modal from "../components/Modal";
