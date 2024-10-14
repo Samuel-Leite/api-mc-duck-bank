@@ -89,7 +89,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className={`container ${isSignUp ? "sign-up-mode" : ""}`}>
+    <div className={`login-container ${isSignUp ? "sign-up-mode" : ""}`}>
       <div className="logo-container">
         <img src={mcduckLogo} alt="McDuck Bank Logo" className="logo logo-left" />
         <img src={mcduckLogo} alt="McDuck Bank Logo" className="logo logo-right" />
