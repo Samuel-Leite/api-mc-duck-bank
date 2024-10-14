@@ -101,7 +101,7 @@ const LoginPage = () => {
             <div className="content">
               <h3>Create your McDuck Bank Account</h3>
               <p>Welcome to McDuck Bank! Join us today to manage your finances effortlessly and securely.</p>
-              <button className="btn transparent" onClick={handleToggle}>
+              <button className="btn-login transparent" onClick={handleToggle}>
                 Sign up
               </button>
             </div>
@@ -110,7 +110,7 @@ const LoginPage = () => {
             <div className="content">
               <h3>Already have an account?</h3>
               <p>Welcome back to McDuck Bank! Log in to securely manage your finances and enjoy our banking services.</p>
-              <button className="btn transparent" onClick={handleToggle}>
+              <button className="btn-login transparent" onClick={handleToggle}>
                 Sign in
               </button>
             </div>

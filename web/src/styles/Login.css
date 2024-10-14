@@ -155,7 +155,7 @@ form.sign-in-form {
   /* Amarelo mais escuro para o hover */
 }
 
-.btn {
+.btn-login {
   width: 150px;
   background-color: #ffd700;
   /* Amarelo mais escuro */
@@ -172,7 +172,7 @@ form.sign-in-form {
   transition: 0.5s;
 }
 
-.btn:hover {
+.btn-login:hover {
   background-color: #cca300;
   /* Amarelo escuro mais suave para o hover */
 }
@@ -244,7 +244,7 @@ form.sign-in-form {
   padding: 0.7rem 0;
 }
 
-.btn.transparent {
+.btn-login.transparent {
   margin: 0;
   background: none;
   border: 2px solid #f0f0f0;
@@ -409,7 +409,7 @@ form.sign-in-form {
     padding: 0.5rem 0;
   }
 
-  .btn.transparent {
+  .btn-login.transparent {
     width: 110px;
     height: 35px;
     font-size: 0.7rem;
@@ -482,7 +482,7 @@ form.sign-in-form {
     /* Amarelo âmbar para o hover */
   }
 
-  .btn {
+  .btn-login-login {
     width: 150px;
     background-color: #ffbf00;
     /* Amarelo âmbar */
@@ -499,7 +499,7 @@ form.sign-in-form {
     transition: 0.5s;
   }
 
-  .btn:hover {
+  .btn-login:hover {
     background-color: #cca300;
     /* Amarelo escuro mais suave para o hover */
   }
@@ -571,7 +571,7 @@ form.sign-in-form {
     padding: 0.7rem 0;
   }
 
-  .btn.transparent {
+  .btn-login.transparent {
     margin: 0;
     background: none;
     border: 2px solid #f0f0f0;
@@ -686,7 +686,7 @@ form.sign-in-form {
       padding: 0.5rem 0;
     }
 
-    .btn.transparent {
+    .btn-login.transparent {
       width: 110px;
       height: 35px;
       font-size: 0.7rem;
