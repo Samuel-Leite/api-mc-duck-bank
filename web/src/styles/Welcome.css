@@ -151,7 +151,11 @@ textarea {
 input,
 select,
 textarea {
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 00%;
+>>>>>>> welcome
   outline: none;
 }
 
@@ -171,7 +175,11 @@ body {
   font-size: var(--fontSize-body-4);
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-5);
+<<<<<<< HEAD
   overflow: hidden;
+=======
+  overflow: visible;
+>>>>>>> welcome
   height: 300vh;
 }
 

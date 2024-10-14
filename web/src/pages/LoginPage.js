@@ -89,19 +89,19 @@ const LoginPage = () => {
   };
 
   return (
-    <div className={`container ${isSignUp ? "sign-up-mode" : ""}`}>
-      <div className="logo-container">
-        <img src={mcduckLogo} alt="McDuck Bank Logo" className="logo logo-left" />
-        <img src={mcduckLogo} alt="McDuck Bank Logo" className="logo logo-right" />
+    <div className={`login-container ${isSignUp ? "sign-up-mode" : ""}`}>
+      <div className="login-logo-container">
+        <img src={mcduckLogo} alt="McDuck Bank Logo" className="login-logo logo-left" />
+        <img src={mcduckLogo} alt="McDuck Bank Logo" className="login-logo logo-right" />
       </div>
 
-      <div className="forms-container">
+      <div className="login-forms-container">
         <div className="panels-container">
           <div className={`panel left-panel ${isTransitioning ? "transition" : ""}`}>
             <div className="content">
               <h3>Create your McDuck Bank Account</h3>
               <p>Welcome to McDuck Bank! Join us today to manage your finances effortlessly and securely.</p>
-              <button className="btn transparent" onClick={handleToggle}>
+              <button className="btn-login transparent" onClick={handleToggle}>
                 Sign up
               </button>
             </div>
@@ -110,7 +110,7 @@ const LoginPage = () => {
             <div className="content">
               <h3>Already have an account?</h3>
               <p>Welcome back to McDuck Bank! Log in to securely manage your finances and enjoy our banking services.</p>
-              <button className="btn transparent" onClick={handleToggle}>
+              <button className="btn-login transparent" onClick={handleToggle}>
                 Sign in
               </button>
             </div>

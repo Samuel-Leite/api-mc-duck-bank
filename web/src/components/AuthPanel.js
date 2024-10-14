@@ -50,7 +50,7 @@ const AuthPanel = ({ isSignUp, formData, onChange, onSubmit, onLogin }) => {
           onChange={onChange}
           required
         />
-        <button type="submit" className="btn solid">
+        <button type="submit" className="btn-login solid">
           Sign up
         </button>
       </form>
@@ -77,7 +77,7 @@ const AuthPanel = ({ isSignUp, formData, onChange, onSubmit, onLogin }) => {
           onChange={onChange}
           required
         />
-        <button type="submit" className="btn solid">
+        <button type="submit" className="btn-login solid">
           Sign in
         </button>
       </form>
