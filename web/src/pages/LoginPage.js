@@ -90,12 +90,12 @@ const LoginPage = () => {
 
   return (
     <div className={`login-container ${isSignUp ? "sign-up-mode" : ""}`}>
-      <div className="logo-container">
-        <img src={mcduckLogo} alt="McDuck Bank Logo" className="logo logo-left" />
-        <img src={mcduckLogo} alt="McDuck Bank Logo" className="logo logo-right" />
+      <div className="login-logo-container">
+        <img src={mcduckLogo} alt="McDuck Bank Logo" className="login-logo logo-left" />
+        <img src={mcduckLogo} alt="McDuck Bank Logo" className="login-logo logo-right" />
       </div>
 
-      <div className="forms-container">
+      <div className="login-forms-container">
         <div className="panels-container">
           <div className={`panel left-panel ${isTransitioning ? "transition" : ""}`}>
             <div className="content">
