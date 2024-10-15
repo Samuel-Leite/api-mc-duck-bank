@@ -12,6 +12,8 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
+          <Route path="/" element={<Navigate to="/welcome" replace />} />
+          {/* Redireciona a raiz para /welcome */}
           <Route path="/welcome" element={<WelcomePage />} />
           {/* Nova rota para WelcomePage */}
           <Route path="/authentication" element={<LoginPage />} />{" "}
