@@ -33,7 +33,7 @@ const userController = {
     try {
       const { client, release } = await getClient(); // Certifique-se de obter o cliente e a função de liberação
       const result = await client.query(
-        "SELECT * FROM users WHERE cpf = $1", // Alterado para buscar pelo 'cpf'
+        "SELECT * FROM tb_users WHERE cpf = $1", // Alterado para buscar pelo 'cpf'
         [cpf]
       );
 

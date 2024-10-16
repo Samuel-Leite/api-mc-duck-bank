@@ -2,7 +2,8 @@ const express = require("express");
 const path = require("path");
 const dotenv = require("dotenv");
 const authRoutes = require("./routes/authRoutes");
-const cors = require("cors"); // Importa o cors
+const cryptoRoutes = require("./routes/cryptoRoutes"); // Importa as rotas do crypto
+const cors = require("cors");
 const { collectDefaultMetrics, register, Histogram } = require("prom-client");
 
 dotenv.config();
@@ -30,13 +31,16 @@ app.use((req, res, next) => {
 });
 
 // Use o middleware CORS
-app.use(cors()); // Habilita CORS para todas as rotas
+app.use(cors());
 
+// Configuração do express
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "web")));
 
+// Rotas
 app.use("/auth", authRoutes);
+app.use("/api", cryptoRoutes); // Adiciona as rotas do crypto
 
 // Rota para expor métricas
 app.get("/metrics", async (req, res) => {
@@ -44,6 +48,7 @@ app.get("/metrics", async (req, res) => {
   res.end(await register.metrics());
 });
 
+// Rotas de página
 app.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "web", "pages", "login.html"));
 });
@@ -52,6 +57,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "web", "index.html"));
 });
 
+// Inicializa o servidor
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
